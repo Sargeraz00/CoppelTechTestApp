@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgroud"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_padding_default"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heroeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_default"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
+            tool:text="Heroe Name" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/heroeImg"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/common_padding_default"
+            android:layout_marginBottom="@dimen/common_padding_default"
+            app:shapeAppearanceOverlay="@style/roundImageView"
+            tool:src="@drawable/ic_launcher_background" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_padding_default">
+
+            <TextView
+                android:id="@+id/intelligenceTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intelligence:"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/intelligence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/intelligenceTV"
+                app:layout_constraintTop_toTopOf="@+id/intelligenceTV"
+                tool:text="10" />
+
+            <TextView
+                android:id="@+id/strengthTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strength:"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toStartOf="@+id/durabilityTV"
+                app:layout_constraintStart_toEndOf="@+id/intelligence"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/strength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintBottom_toBottomOf="@+id/strengthTV"
+                app:layout_constraintStart_toEndOf="@+id/strengthTV"
+                tool:text="10" />
+
+            <TextView
+                android:id="@+id/speedTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:text="Speed:"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/speedTV"
+                app:layout_constraintStart_toEndOf="@+id/speedTV"
+                tool:text="10" />
+
+            <TextView
+                android:id="@+id/durabilityTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Durability:"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toStartOf="@+id/durability"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/durability"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/durabilityTV"
+                tool:text="10"/>
+
+            <TextView
+                android:id="@+id/powerTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Power:"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/power"
+                app:layout_constraintTop_toBottomOf="@+id/durabilityTV" />
+
+            <TextView
+                android:id="@+id/power"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                app:layout_constraintBottom_toBottomOf="@+id/powerTV"
+                app:layout_constraintEnd_toEndOf="parent"
+                tool:text="10" />
+
+            <TextView
+                android:id="@+id/combatTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Combat:"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/powerTV"
+                app:layout_constraintStart_toEndOf="@+id/speed" />
+
+            <TextView
+                android:id="@+id/combat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/combatTV"
+                app:layout_constraintStart_toEndOf="@+id/combatTV"
+                tool:text="10" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="BIO"
+                android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"/>
+
+            <TextView
+                android:id="@+id/fullNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:layout_marginTop="@dimen/common_padding_min"
+                tool:text="Nombre Completo" />
+
+            <TextView
+                android:id="@+id/aliasTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:layout_marginTop="@dimen/common_padding_min"
+                tool:text="Alias" />
+
+
+            <TextView
+                android:id="@+id/alteregoTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:layout_marginTop="@dimen/common_padding_min"
+                tool:text="Altereog" />
+
+
+            <TextView
+                android:id="@+id/place_of_birth_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:layout_marginTop="@dimen/common_padding_min"
+                tool:text="Birth place" />
+
+            <TextView
+                android:id="@+id/firstAppearTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:layout_marginTop="@dimen/common_padding_min"
+                tool:text="primera aparicion aqui" />
+
+            <TextView
+                android:id="@+id/publisher_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:layout_marginTop="@dimen/common_padding_min"
+                tool:text="publisher: MCU" />
+
+            <TextView
+                android:id="@+id/alignment_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:layout_marginTop="@dimen/common_padding_min"
+                tool:text="Bnado: Malos" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/appearance_text"
+                android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge" />
+
+            <TextView
+                android:id="@+id/gender_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:layout_marginTop="@dimen/common_padding_min"
+                tool:text="Gender: Male" />
+
+            <TextView
+                android:id="@+id/raceTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:layout_marginTop="@dimen/common_padding_min"
+                tool:text="Race: Sayan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:layout_marginTop="@dimen/common_padding_min"
+                tool:text="Height:" />
+
+            <TextView
+                android:id="@+id/heightTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:layout_marginTop="@dimen/common_padding_min"
+                tool:itemCount="2"
+                tool:text="230cm" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:layout_marginTop="@dimen/common_padding_min"
+                tool:text="Weight:" />
+
+            <TextView
+                android:id="@+id/weight_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:layout_marginTop="@dimen/common_padding_min"
+                tool:itemCount="2"
+                tool:text="100kg" />
+
+            <TextView
+                android:id="@+id/eye_color_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:layout_marginTop="@dimen/common_padding_min"
+                tool:text="Eye color:" />
+
+            <TextView
+                android:id="@+id/hair_color_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:layout_marginTop="@dimen/common_padding_min"
+                tool:text="hair color:" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="WORK"
+                android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"/>
+
+            <TextView
+                android:id="@+id/occupationTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:layout_marginTop="@dimen/common_padding_min"
+                tool:text="Trabajo:" />
+
+            <TextView
+                android:id="@+id/baseTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:layout_marginTop="@dimen/common_padding_min"
+                tool:text="Base" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/connections_text"
+                android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge" />
+
+            <TextView
+                android:id="@+id/affiliationTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:layout_marginTop="@dimen/common_padding_min"
+                tool:text="SHIELD" />
+
+            <TextView
+                android:id="@+id/relativesTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_padding_min"
+                android:layout_marginTop="@dimen/common_padding_min"
+                tool:text="Juan del diablo" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

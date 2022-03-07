@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Heropedia</string>
+    <string name="main_tittle_text">Heropedia</string>
+    <string name="start_btn">Iniciar</string>
+    <string name="group_affiliation_text">"Group affiliation: "</string>
+    <string name="relatives_text">"Relatives: "</string>
+    <string name="ocupation_text">"Occupation: "</string>
+    <string name="gender_text">"Gender: "</string>
+    <string name="base_text">"Base: "</string>
+    <string name="race_text">"Race: "</string>
+    <string name="eyeColor_text">"Eye Color: "</string>
+    <string name="hairColor_text">"Hair Color: "</string>
+    <string name="name_text">"Name: "</string>
+    <string name="alterEgo_text">"AlterEgo: "</string>
+    <string name="birthPlace_text">"Place of Birth: "</string>
+    <string name="alias">Alias:</string>
+    <string name="first_appearance_text">"First appearance: "</string>
+    <string name="publisher_text">"Publisher: "</string>
+    <string name="alingment_text">"Alignment: "</string>
+    <string name="appearance_text">APPEARANCE</string>
+    <string name="connections_text">CONNECTIONS</string>
+    <string name="height_text">"Height: "</string>
+    <string name="weight_text">"Weight: "</string>
+    <string name="no_alias_found">No Alias Found</string>
+</resources>

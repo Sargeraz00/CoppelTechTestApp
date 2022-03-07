@@ -22,4 +22,12 @@
     <string name="height_text">"Height: "</string>
     <string name="weight_text">"Weight: "</string>
     <string name="no_alias_found">No Alias Found</string>
+    <string name="bio_text">BIO</string>
+    <string name="work_text">WORK</string>
+    <string name="intelligence_text">Intelligence:</string>
+    <string name="strength_text">Strength:</string>
+    <string name="speed_text">Speed:</string>
+    <string name="durability_text">Durability:</string>
+    <string name="power_text">Power:</string>
+    <string name="combat_text">Combat:</string>
 </resources>

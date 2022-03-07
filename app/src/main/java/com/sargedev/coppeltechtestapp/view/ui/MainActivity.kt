@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         var currentHero: ApiHeroModel? = null
-        var scrolling = 50
+        var scrolling = 100
         var firstscrolling = 1
     }
 

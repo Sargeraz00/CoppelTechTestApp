@@ -7,7 +7,7 @@ data class ApiHeroModel(
     val id: String,
     val image: Image,
     val name: String,
-    val powerStats: Powerstats,
+    val powerstats: PowerStats,
     val response: String,
     val work: Work
 )

@@ -61,12 +61,12 @@ class DetailFragment : Fragment() {
 
     @SuppressLint("SetTextI18n")
     private fun setupAppearance() {
-        binding.genderTv.text = getString(R.string.gender_text) + currentHero!!.appearance.gender
+        binding.genderTV.text = getString(R.string.gender_text) + currentHero!!.appearance.gender
         binding.raceTV.text = getString(R.string.race_text) + currentHero!!.appearance.race
         binding.heightTV.text = getString(R.string.height_text) + currentHero!!.appearance.height.toString()
-        binding.weightTv.text = getString(R.string.weight_text) + currentHero!!.appearance.weight.toString()
-        binding.eyeColorTv.text = getString(R.string.eyeColor_text) + currentHero!!.appearance.eyeColor
-        binding.hairColorTv.text = getString(R.string.hairColor_text) + currentHero!!.appearance.hairColor
+        binding.weightTV.text = getString(R.string.weight_text) + currentHero!!.appearance.weight.toString()
+        binding.eyeColorTV.text = getString(R.string.eyeColor_text) + currentHero!!.appearance.eyeColor
+        binding.hairColorTV.text = getString(R.string.hairColor_text) + currentHero!!.appearance.hairColor
     }
 
     @SuppressLint("SetTextI18n")
@@ -75,18 +75,18 @@ class DetailFragment : Fragment() {
         binding.alteregoTV.text = getString(R.string.alterEgo_text) + currentHero!!.biography.alterEgos
 //        binding.aliasTV.text = currentHero!!.biography.alias.toString()
 //            .substring(1, currentHero!!.biography.alias.toString().length - 1)
-        binding.placeOfBirthTv.text = getString(R.string.birthPlace_text) + currentHero!!.biography.placeOfBirth
+        binding.placeOfBirthTV.text = getString(R.string.birthPlace_text) + currentHero!!.biography.placeOfBirth
         binding.firstAppearTV.text = getString(R.string.first_appearance_text) + currentHero!!.biography.firstAppearance
         binding.publisherTv.text = getString(R.string.publisher_text) + currentHero!!.biography.publisher
-        binding.alignmentTv.text = getString(R.string.alingment_text) + currentHero!!.biography.alignment
+        binding.alignmentTV.text = getString(R.string.alingment_text) + currentHero!!.biography.alignment
     }
 
     private fun setupHeroesStats() {
-        binding.strength.text = currentHero?.powerStats?.strength
-        binding.durability.text = currentHero?.powerStats?.durability
-        binding.speed.text = currentHero?.powerStats?.speed
-        binding.power.text = currentHero?.powerStats?.power
-        binding.combat.text = currentHero?.powerStats?.combat
-        binding.intelligence.text = currentHero?.powerStats?.intelligence
+        binding.strength.text = currentHero?.powerstats?.strength
+        binding.durability.text = currentHero?.powerstats?.durability
+        binding.speed.text = currentHero?.powerstats?.speed
+        binding.power.text = currentHero?.powerstats?.power
+        binding.combat.text = currentHero?.powerstats?.combat
+        binding.intelligence.text = currentHero?.powerstats?.intelligence
     }
 }

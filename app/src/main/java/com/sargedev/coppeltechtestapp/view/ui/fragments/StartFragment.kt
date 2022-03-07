@@ -20,7 +20,7 @@ class StartFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentStartBinding.inflate(inflater, container, false)
 
 
@@ -31,7 +31,7 @@ class StartFragment : Fragment() {
             Handler(Looper.getMainLooper()).postDelayed({
                 Navigation.findNavController(binding.startBtn)
                     .navigate(R.id.action_tittleFragment_to_mainFragment)
-            }, 3000)
+            }, 2000)
 
         }
         return binding.root

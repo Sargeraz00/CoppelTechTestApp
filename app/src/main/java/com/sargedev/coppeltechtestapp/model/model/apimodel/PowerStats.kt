@@ -1,6 +1,6 @@
 package com.sargedev.coppeltechtestapp.model.model.apimodel
 
-data class Powerstats(
+data class PowerStats(
     val combat: String,
     val durability: String,
     val intelligence: String,

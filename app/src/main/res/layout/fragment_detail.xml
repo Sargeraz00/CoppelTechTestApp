@@ -42,7 +42,7 @@
                 android:id="@+id/intelligenceTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Intelligence:"
+                android:text="@string/intelligence_text"
                 android:layout_marginStart="@dimen/common_padding_min"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="parent"
@@ -60,7 +60,7 @@
                 android:id="@+id/strengthTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Strength:"
+                android:text="@string/strength_text"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toStartOf="@+id/durabilityTV"
                 app:layout_constraintStart_toEndOf="@+id/intelligence"
@@ -80,7 +80,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/common_padding_min"
-                android:text="Speed:"
+                android:text="@string/speed_text"
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -97,7 +97,7 @@
                 android:id="@+id/durabilityTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Durability:"
+                android:text="@string/durability_text"
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toStartOf="@+id/durability"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -114,7 +114,7 @@
                 android:id="@+id/powerTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Power:"
+                android:text="@string/power_text"
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/power"
@@ -132,7 +132,7 @@
                 android:id="@+id/combatTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Combat:"
+                android:text="@string/combat_text"
                 android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/powerTV"
@@ -156,7 +156,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="BIO"
+                android:text="@string/bio_text"
                 android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"/>
 
             <TextView
@@ -186,7 +186,7 @@
 
 
             <TextView
-                android:id="@+id/place_of_birth_tv"
+                android:id="@+id/placeOfBirthTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/common_padding_min"
@@ -210,7 +210,7 @@
                 tool:text="publisher: MCU" />
 
             <TextView
-                android:id="@+id/alignment_tv"
+                android:id="@+id/alignmentTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/common_padding_min"
@@ -232,7 +232,7 @@
                 android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge" />
 
             <TextView
-                android:id="@+id/gender_tv"
+                android:id="@+id/genderTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/common_padding_min"
@@ -271,7 +271,7 @@
                 tool:text="Weight:" />
 
             <TextView
-                android:id="@+id/weight_tv"
+                android:id="@+id/weightTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/common_padding_min"
@@ -280,7 +280,7 @@
                 tool:text="100kg" />
 
             <TextView
-                android:id="@+id/eye_color_tv"
+                android:id="@+id/eyeColorTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/common_padding_min"
@@ -288,7 +288,7 @@
                 tool:text="Eye color:" />
 
             <TextView
-                android:id="@+id/hair_color_tv"
+                android:id="@+id/hairColorTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/common_padding_min"
@@ -306,7 +306,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="WORK"
+                android:text="@string/work_text"
                 android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"/>
 
             <TextView
